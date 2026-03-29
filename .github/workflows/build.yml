@@ -11,6 +11,15 @@ on:
       channel:
         type: string
         default: "dev"
+    secrets:
+      WINDOWS_SIGNING_KEY:
+        required: false
+      WINDOWS_SIGNING_PASSWORD:
+        required: false
+      WINDOWS_SIGNING_SHA1:
+        required: false
+      SENTRY_AUTH_TOKEN:
+        required: false
 
 env:
   IS_GITHUB_ACTIONS: 1
