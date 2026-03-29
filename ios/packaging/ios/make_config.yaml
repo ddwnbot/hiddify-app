@@ -1,9 +1,9 @@
-display_name: Hiddify
+display_name: VPorN
 
 icon: ..\..\assets\images\windows.ico
 
 keywords:
-  - Hiddify
+  - VPorN
   - Proxy
   - VPN
   - V2ray
@@ -12,7 +12,7 @@ keywords:
   - Psiphon
   - OpenVPN
 
-generic_name: Hiddify
+generic_name: VPorN
 
 actions:
   - name: Start

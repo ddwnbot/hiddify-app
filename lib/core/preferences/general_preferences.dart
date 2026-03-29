@@ -96,6 +96,8 @@ abstract class Preferences {
 
   static final markNewProfileActive = PreferencesNotifier.create<bool, bool>("mark_new_profile_active", true);
 
+  static final showProxyListOnHome = PreferencesNotifier.create<bool, bool>("show_proxy_list_on_home", false);
+
   static final dynamicNotification = PreferencesNotifier.create<bool, bool>("dynamic_notification", true);
 
   static final autoCheckIp = PreferencesNotifier.create<bool, bool>("auto_check_ip", true);

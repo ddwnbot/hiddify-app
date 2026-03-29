@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "هیدیفای",
+    "appTitle": "VPorN",
     "start": "شروع",
     "version": "نسخه",
     "ok": "باشه",
@@ -226,7 +226,9 @@
         "urlTestInterval": "فاصله زمانی تست URL",
         "clashApiPort": "پورت Clash API",
         "useXrayCoreWhenPossible": "استفاده از xray-core در صورت امکان",
-        "useXrayCoreWhenPossibleMsg": "هنگام پردازش لینک‌های اشتراک از xray-core استفاده شود. برای فعال‌سازی این گزینه باید لینک اشتراک را مجدداً وارد کنید."
+        "useXrayCoreWhenPossibleMsg": "هنگام پردازش لینک‌های اشتراک از xray-core استفاده شود. برای فعال‌سازی این گزینه باید لینک اشتراک را مجدداً وارد کنید.",
+        "showProxyListOnHome": "Show server list on home",
+        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
       },
       "routing": {
         "title": "مسیریابی",

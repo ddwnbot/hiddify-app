@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "Hiddify",
+    "appTitle": "VPorN",
     "start": "Начать",
     "version": "Версия",
     "ok": "OK",
@@ -230,7 +230,9 @@
         "urlTestInterval": "Интервал теста URL",
         "clashApiPort": "Порт Clash API",
         "useXrayCoreWhenPossible": "Использовать xray-core, если возможно",
-        "useXrayCoreWhenPossibleMsg": "Использовать xray-core при обработке ссылок на подписку. Необходимо повторно импортировать ссылку, чтобы включить эту опцию."
+        "useXrayCoreWhenPossibleMsg": "Использовать xray-core при обработке ссылок на подписку. Необходимо повторно импортировать ссылку, чтобы включить эту опцию.",
+        "showProxyListOnHome": "Show server list on home",
+        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
       },
       "routing": {
         "title": "Маршрутизация",

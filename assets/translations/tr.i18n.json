@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "Hiddify",
+    "appTitle": "VPorN",
     "start": "Başlat",
     "version": "Sürüm",
     "ok": "Tamam",
@@ -226,7 +226,9 @@
         "urlTestInterval": "URL testi aralığı",
         "clashApiPort": "Clash API portu",
         "useXrayCoreWhenPossible": "Mümkün olduğunda xray-core kullan",
-        "useXrayCoreWhenPossibleMsg": "Abonelik bağlantılarını ayrıştırırken xray-core kullanın. Bu seçeneği etkinleştirmek için bağlantıyı yeniden içe aktarmanız gerekir."
+        "useXrayCoreWhenPossibleMsg": "Abonelik bağlantılarını ayrıştırırken xray-core kullanın. Bu seçeneği etkinleştirmek için bağlantıyı yeniden içe aktarmanız gerekir.",
+        "showProxyListOnHome": "Show server list on home",
+        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
       },
       "routing": {
         "title": "Yönlendirme",

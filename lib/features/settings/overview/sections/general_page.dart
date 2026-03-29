@@ -32,6 +32,13 @@ class GeneralPage extends HookConsumerWidget {
             secondary: const Icon(Icons.flag_rounded),
             onChanged: ref.read(Preferences.autoCheckIp.notifier).update,
           ),
+          SwitchListTile.adaptive(
+            title: Text(t.pages.settings.general.showProxyListOnHome),
+            subtitle: Text(t.pages.settings.general.showProxyListOnHomeMsg),
+            secondary: const Icon(Icons.list_rounded),
+            value: ref.watch(Preferences.showProxyListOnHome),
+            onChanged: ref.read(Preferences.showProxyListOnHome.notifier).update,
+          ),
           if (PlatformUtils.isAndroid) ...[
             SwitchListTile.adaptive(
               title: Text(t.pages.settings.general.dynamicNotification),

@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "Hiddify",
+    "appTitle": "VPorN",
     "start": "Mulai",
     "version": "Versi",
     "ok": "Oke",
@@ -226,7 +226,9 @@
         "urlTestInterval": "Interval uji URL",
         "clashApiPort": "Port API Clash",
         "useXrayCoreWhenPossible": "Gunakan xray-core jika memungkinkan",
-        "useXrayCoreWhenPossibleMsg": "Gunakan xray-core saat mengurai tautan langganan. Anda perlu mengimpor ulang tautan untuk mengaktifkan opsi ini."
+        "useXrayCoreWhenPossibleMsg": "Gunakan xray-core saat mengurai tautan langganan. Anda perlu mengimpor ulang tautan untuk mengaktifkan opsi ini.",
+        "showProxyListOnHome": "Show server list on home",
+        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
       },
       "routing": {
         "title": "Perutean",

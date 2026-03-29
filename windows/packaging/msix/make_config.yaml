@@ -1,6 +1,6 @@
-display_name: Hiddify
-publisher_display_name: Hiddify
-identity_name: Hiddify.HiddifyNext
+display_name: VPorN
+publisher_display_name: VPorN
+identity_name: VPorN.VPorNNext
 msix_version: 4.1.2.0
 logo_path: windows\runner\resources\app_icon.ico
 capabilities: internetClient, internetClientServer, privateNetworkClientServer
@@ -16,6 +16,6 @@ startup_task:
   parameters: --autostart
 
 # For testing with a self-signed certificate
-# publisher: CN=Hiddify-Test
+# publisher: CN=VPorN-Test
 # certificate_password: "1234"
 # install_certificate: "true"

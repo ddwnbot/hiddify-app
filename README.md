@@ -1,3 +1,14 @@
+# VPorN
+
+This project is a **fork of [Hiddify App](https://github.com/hiddify/hiddify-app)** and follows the Hiddify license terms (GPLv3 + additional restrictions). Upstream source and attribution are preserved.
+
+**Changes in this fork:**
+- Rebranded app name and assets (VPorN logo)
+- Optional server list on home screen
+- Home screen sorting/latency controls for server list
+
+---
+
 <div dir="ltr" align=center>
     
 [**![Lang_farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) فارسی**](README_fa.md) / [**Русский 🇷🇺**](README_ru.md) / [**简体中文 🇨🇳**](README_cn.md) / [**日本語 🇯🇵**](README_ja.md) / [**Portugês-BR 🇧🇷**](README_br.md)

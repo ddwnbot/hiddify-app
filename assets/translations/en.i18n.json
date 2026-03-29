@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "Hiddify",
+    "appTitle": "VPorN",
     "start": "Start",
     "version": "Version",
     "ok": "OK",
@@ -227,7 +227,9 @@
         "urlTestInterval": "URL test interval",
         "clashApiPort": "Clash API port",
         "useXrayCoreWhenPossible": "Use xray-core when possible",
-        "useXrayCoreWhenPossibleMsg": "Use xray-core during parsing sub links. You need to reimport the sub link to enable this option."
+        "useXrayCoreWhenPossibleMsg": "Use xray-core during parsing sub links. You need to reimport the sub link to enable this option.",
+        "showProxyListOnHome": "Show server list on home",
+        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
       },
       "routing": {
         "title": "Routing",
