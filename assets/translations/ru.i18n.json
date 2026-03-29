@@ -97,7 +97,8 @@
   "pages": {
     "home": {
       "title": "Главная",
-      "quickSettings": "Быстрые настройки"
+      "quickSettings": "Быстрые настройки",
+      "announceTitle": "Описание"
     },
     "proxies": {
       "title": "Прокси",

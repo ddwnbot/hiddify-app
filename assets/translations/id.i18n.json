@@ -93,7 +93,8 @@
   "pages": {
     "home": {
       "title": "Beranda",
-      "quickSettings": "Pengaturan cepat"
+      "quickSettings": "Pengaturan cepat",
+      "announceTitle": "Deskripsi"
     },
     "proxies": {
       "title": "Proxy",

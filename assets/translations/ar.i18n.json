@@ -99,7 +99,8 @@
   "pages": {
     "home": {
       "title": "الرئيسية",
-      "quickSettings": "الإعدادات السريعة"
+      "quickSettings": "الإعدادات السريعة",
+      "announceTitle": "الوصف"
     },
     "proxies": {
       "title": "البروكسيات",

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:dartx/dartx.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -25,6 +27,10 @@ class HomePage extends HookConsumerWidget {
     // final hasAnyProfile = ref.watch(hasAnyProfileProvider);
     final activeProfile = ref.watch(activeProfileProvider);
     final showProxyListOnHome = ref.watch(Preferences.showProxyListOnHome);
+    final announce = activeProfile.maybeWhen(
+      data: (profile) => _extractAnnounce(profile?.populatedHeaders),
+      orElse: () => null,
+    );
 
     return Scaffold(
       appBar: AppBar(
@@ -121,22 +127,19 @@ class HomePage extends HookConsumerWidget {
                           ),
                           _ => const Text(""),
                         },
-                        SliverFillRemaining(
-                          hasScrollBody: false,
+                        SliverToBoxAdapter(
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisSize: MainAxisSize.min,
                             children: [
-                              Expanded(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    ConnectionButton(),
-                                    ActiveProxyDelayIndicator(),
-                                    const HomeProxyList(),
-                                  ],
+                              const Gap(12),
+                              ConnectionButton(),
+                              ActiveProxyDelayIndicator(),
+                              if (announce != null && announce!.isNotBlank)
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 12),
+                                  child: _AnnounceCard(text: announce!, title: t.pages.home.announceTitle),
                                 ),
-                              ),
+                              if (showProxyListOnHome) const HomeProxyList(),
                               if (!showProxyListOnHome) const ActiveProxyFooter(),
                             ],
                           ),
@@ -159,6 +162,49 @@ class HomePage extends HookConsumerWidget {
       ),
     );
   }
+}
+
+class _AnnounceCard extends StatelessWidget {
+  const _AnnounceCard({required this.text, required this.title});
+
+  final String text;
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: theme.colorScheme.surfaceContainerHigh,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: theme.textTheme.labelLarge),
+          const Gap(6),
+          Text(text, style: theme.textTheme.bodyMedium),
+        ],
+      ),
+    );
+  }
+}
+
+String? _extractAnnounce(Map<String, dynamic>? headers) {
+  if (headers == null) return null;
+  final raw = headers['announce']?.toString().trim();
+  if (raw == null || raw.isEmpty) return null;
+  if (raw.startsWith('base64:')) {
+    final payload = raw.replaceFirst('base64:', '');
+    try {
+      return utf8.decode(base64.decode(payload));
+    } catch (_) {
+      return null;
+    }
+  }
+  return raw;
 }
 
 class AppVersionLabel extends HookConsumerWidget {

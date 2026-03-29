@@ -47,6 +47,7 @@ class ProfileParser {
     'profile-web-page-url',
     'enable-warp',
     'enable-fragment',
+    'announce',
   ];
 
   final Ref _ref;

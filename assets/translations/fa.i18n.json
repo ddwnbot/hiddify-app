@@ -93,7 +93,8 @@
   "pages": {
     "home": {
       "title": "خانه",
-      "quickSettings": "تنظیمات سریع"
+      "quickSettings": "تنظیمات سریع",
+      "announceTitle": "توضیحات"
     },
     "proxies": {
       "title": "پروکسی‌ها",

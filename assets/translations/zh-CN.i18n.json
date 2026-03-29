@@ -93,7 +93,8 @@
   "pages": {
     "home": {
       "title": "主页",
-      "quickSettings": "快速设置"
+      "quickSettings": "快速设置",
+      "announceTitle": "说明"
     },
     "proxies": {
       "title": "代理",

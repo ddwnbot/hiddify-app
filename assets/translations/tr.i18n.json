@@ -93,7 +93,8 @@
   "pages": {
     "home": {
       "title": "Ana Sayfa",
-      "quickSettings": "Hızlı ayarlar"
+      "quickSettings": "Hızlı ayarlar",
+      "announceTitle": "Açıklama"
     },
     "proxies": {
       "title": "Proxy'ler",

@@ -93,7 +93,8 @@
   "pages": {
     "home": {
       "title": "Início",
-      "quickSettings": "Configurações rápidas"
+      "quickSettings": "Configurações rápidas",
+      "announceTitle": "Descrição"
     },
     "proxies": {
       "title": "Proxies",
