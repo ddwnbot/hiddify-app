@@ -121,7 +121,7 @@ class HomePage extends HookConsumerWidget {
                           ),
                           _ => const Text(""),
                         },
-                        const SliverFillRemaining(
+                        SliverFillRemaining(
                           hasScrollBody: false,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -137,7 +137,7 @@ class HomePage extends HookConsumerWidget {
                                   ],
                                 ),
                               ),
-                              if (!showProxyListOnHome) ActiveProxyFooter(),
+                              if (!showProxyListOnHome) const ActiveProxyFooter(),
                             ],
                           ),
                         ),
