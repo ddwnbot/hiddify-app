@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:hiddify/core/app_info/app_info_provider.dart';
 import 'package:hiddify/core/localization/translations.dart';
+import 'package:hiddify/core/preferences/general_preferences.dart';
 import 'package:hiddify/core/router/bottom_sheets/bottom_sheets_notifier.dart';
 import 'package:hiddify/features/home/widget/connection_button.dart';
 import 'package:hiddify/features/home/widget/home_proxy_list.dart';
@@ -23,6 +24,7 @@ class HomePage extends HookConsumerWidget {
     final t = ref.watch(translationsProvider).requireValue;
     // final hasAnyProfile = ref.watch(hasAnyProfileProvider);
     final activeProfile = ref.watch(activeProfileProvider);
+    final showProxyListOnHome = ref.watch(Preferences.showProxyListOnHome);
 
     return Scaffold(
       appBar: AppBar(
@@ -129,13 +131,13 @@ class HomePage extends HookConsumerWidget {
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    const HomeProxyList(),
                                     ConnectionButton(),
                                     ActiveProxyDelayIndicator(),
+                                    const HomeProxyList(),
                                   ],
                                 ),
                               ),
-                              ActiveProxyFooter(),
+                              if (!showProxyListOnHome) ActiveProxyFooter(),
                             ],
                           ),
                         ),

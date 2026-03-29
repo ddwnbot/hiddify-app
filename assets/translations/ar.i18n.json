@@ -233,8 +233,8 @@
         "clashApiPort": "منفذ Clash API",
         "useXrayCoreWhenPossible": "استخدام xray-core عند الإمكان",
         "useXrayCoreWhenPossibleMsg": "استخدم xray-core عند تحليل روابط الاشتراك. تحتاج إلى إعادة استيراد الرابط لتفعيل هذا الخيار",
-        "showProxyListOnHome": "Show server list on home",
-        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
+        "showProxyListOnHome": "إظهار قائمة الخوادم في الصفحة الرئيسية",
+        "showProxyListOnHomeMsg": "عرض قائمة خوادم قابلة للتمرير في الصفحة الرئيسية"
       },
       "routing": {
         "title": "التوجيه",

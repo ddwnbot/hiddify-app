@@ -227,8 +227,8 @@
         "clashApiPort": "Clash API portu",
         "useXrayCoreWhenPossible": "Mümkün olduğunda xray-core kullan",
         "useXrayCoreWhenPossibleMsg": "Abonelik bağlantılarını ayrıştırırken xray-core kullanın. Bu seçeneği etkinleştirmek için bağlantıyı yeniden içe aktarmanız gerekir.",
-        "showProxyListOnHome": "Show server list on home",
-        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
+        "showProxyListOnHome": "Ana ekranda sunucu listesini göster",
+        "showProxyListOnHomeMsg": "Ana ekranda kaydırılabilir sunucu listesini göster"
       },
       "routing": {
         "title": "Yönlendirme",

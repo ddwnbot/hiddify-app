@@ -227,8 +227,8 @@
         "clashApiPort": "Porta da API do Clash",
         "useXrayCoreWhenPossible": "Usar xray-core quando possível",
         "useXrayCoreWhenPossibleMsg": "Use o xray-core ao analisar links de assinatura. Você precisa reimportar o link para ativar esta opção",
-        "showProxyListOnHome": "Show server list on home",
-        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
+        "showProxyListOnHome": "Mostrar lista de servidores na tela inicial",
+        "showProxyListOnHomeMsg": "Exibir uma lista rolável de servidores na tela inicial"
       },
       "routing": {
         "title": "Roteamento",

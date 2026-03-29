@@ -227,8 +227,8 @@
         "clashApiPort": "Clash API 連接埠",
         "useXrayCoreWhenPossible": "盡可能使用 xray-core",
         "useXrayCoreWhenPossibleMsg": "解析訂閱連結時使用 xray-core。您需要重新匯入訂閱連結才能啟用此選項",
-        "showProxyListOnHome": "Show server list on home",
-        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
+        "showProxyListOnHome": "在首頁顯示伺服器清單",
+        "showProxyListOnHomeMsg": "在首頁顯示可捲動的伺服器清單"
       },
       "routing": {
         "title": "路由",

@@ -229,7 +229,7 @@
         "useXrayCoreWhenPossible": "Use xray-core when possible",
         "useXrayCoreWhenPossibleMsg": "Use xray-core during parsing sub links. You need to reimport the sub link to enable this option.",
         "showProxyListOnHome": "Show server list on home",
-        "showProxyListOnHomeMsg": "Display a scrollable list of servers directly on the home screen"
+        "showProxyListOnHomeMsg": "Display a scrollable list of servers on the home screen"
       },
       "routing": {
         "title": "Routing",
